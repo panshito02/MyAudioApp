@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50AE7FE24A7641F00110BE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50AE7FD24A7641F00110BE6 /* AVFoundation.framework */; };
 		A51ACE1724A6345200673DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51ACE1624A6345200673DC7 /* AppDelegate.swift */; };
 		A51ACE1924A6345200673DC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51ACE1824A6345200673DC7 /* SceneDelegate.swift */; };
 		A51ACE1B24A6345200673DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51ACE1A24A6345200673DC7 /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		A51ACE2124A6345200673DC7 /* MyAudioApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51ACE1F24A6345200673DC7 /* MyAudioApp.xcdatamodeld */; };
 		A51ACE2324A6345900673DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51ACE2224A6345900673DC7 /* Assets.xcassets */; };
 		A51ACE2624A6345900673DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51ACE2424A6345900673DC7 /* LaunchScreen.storyboard */; };
+		A5517A7824A9424800675500 /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5517A7724A9424800675500 /* MenuEntity.swift */; };
+		A5D21C7724A92C2300CD304E /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D21C7624A92C2300CD304E /* HomePage.swift */; };
+		A5D21C7B24A93CD700CD304E /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D21C7A24A93CD700CD304E /* HomePageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A50AE7FD24A7641F00110BE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A51ACE1324A6345200673DC7 /* MyAudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51ACE1624A6345200673DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A51ACE1824A6345200673DC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		A51ACE2224A6345900673DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51ACE2524A6345900673DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51ACE2724A6345900673DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5517A7724A9424800675500 /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
+		A5D21C7624A92C2300CD304E /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		A5D21C7A24A93CD700CD304E /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50AE7FE24A7641F00110BE6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50AE7FC24A7641F00110BE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50AE7FD24A7641F00110BE6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A51ACE0A24A6345200673DC7 = {
 			isa = PBXGroup;
 			children = (
 				A51ACE1524A6345200673DC7 /* MyAudioApp */,
 				A51ACE1424A6345200673DC7 /* Products */,
+				A50AE7FC24A7641F00110BE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +76,10 @@
 		A51ACE1524A6345200673DC7 /* MyAudioApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5517A7624A9421400675500 /* Entities */,
+				A5D21C7824A93C8C00CD304E /* Views */,
 				A51ACE1624A6345200673DC7 /* AppDelegate.swift */,
 				A51ACE1824A6345200673DC7 /* SceneDelegate.swift */,
-				A51ACE1A24A6345200673DC7 /* ViewController.swift */,
 				A51ACE1C24A6345200673DC7 /* Main.storyboard */,
 				A51ACE2224A6345900673DC7 /* Assets.xcassets */,
 				A51ACE2424A6345900673DC7 /* LaunchScreen.storyboard */,
@@ -68,6 +87,32 @@
 				A51ACE1F24A6345200673DC7 /* MyAudioApp.xcdatamodeld */,
 			);
 			path = MyAudioApp;
+			sourceTree = "<group>";
+		};
+		A5517A7624A9421400675500 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5517A7724A9424800675500 /* MenuEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5D21C7824A93C8C00CD304E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5D21C7924A93CAC00CD304E /* cells */,
+				A51ACE1A24A6345200673DC7 /* ViewController.swift */,
+				A5D21C7624A92C2300CD304E /* HomePage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5D21C7924A93CAC00CD304E /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5D21C7A24A93CD700CD304E /* HomePageCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D21C7724A92C2300CD304E /* HomePage.swift in Sources */,
+				A5517A7824A9424800675500 /* MenuEntity.swift in Sources */,
 				A51ACE2124A6345200673DC7 /* MyAudioApp.xcdatamodeld in Sources */,
 				A51ACE1B24A6345200673DC7 /* ViewController.swift in Sources */,
+				A5D21C7B24A93CD700CD304E /* HomePageCell.swift in Sources */,
 				A51ACE1724A6345200673DC7 /* AppDelegate.swift in Sources */,
 				A51ACE1924A6345200673DC7 /* SceneDelegate.swift in Sources */,
 			);
